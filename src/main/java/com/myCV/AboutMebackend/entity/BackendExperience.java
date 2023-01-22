@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Experience {
+public class BackendExperience {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,12 +19,8 @@ public class Experience {
     private Long id;
 
     @Column
-    private String frontendSkill;
-    @Column
-    private String frontendExperience;
-
-    @Column
     private String backendSkill;
+
     @Column
     private String backendExperience;
 }
